@@ -1,11 +1,17 @@
-@import url('./vendor/fonts/fonts.css');
-
-body {
-  margin: 0;
+.app-page{
+  width: 100%;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+}
+
+@media screen and (min-width: 1180px){
+  .app-page__header{
+    margin: 0 auto;
+  }
 }

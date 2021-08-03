@@ -1,0 +1,16 @@
+.map{
+  z-index: 0;
+  display: block;
+  position: relative;
+  background-image: url('../../images/map.jpg');
+}
+
+.map__box{
+  height: 423px;
+}
+
+@media screen and (min-width: 768px){
+  .map__box{
+    height: 509px;
+  }
+}

@@ -1,0 +1,97 @@
+.rating{
+  width: 100%;
+  max-width: 400px;
+  border-top: 0.5px solid #C7C7C7;
+  border-bottom: 0.5px solid #C7C7C7;
+}
+
+.rating__pic{
+  background-image: url('../../images/rating/five-stars.svg');
+  position: relative;
+  left: 49px;
+  top: -13px;
+  width: 118px;
+  height: 17px;
+}
+
+.rating__span{
+  color: black;
+  font-weight: 500;
+  margin: 0 4px 0 4px;
+}
+
+.rating__text{
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #37373F;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.rating__text::before{
+  content:  url('../../images/rating/cup.svg');
+  height: 41px;
+  width: 36.65px;
+  margin: 14px 14px 0 0;
+}
+
+.rating_border_none{
+  border: none;
+}
+
+@media screen and (min-width: 440px){
+  .rating{
+    display: flex;
+  }
+
+  .rating__pic{
+    left: 0;
+    top: 0;
+    align-self: center;
+    margin-left: 14px;
+  }
+
+  .rating__text::before{
+    margin: 14px 14px 14px 0;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .rating{
+    display: block;
+  }
+
+  .rating__pic{
+    left: 49px;
+    top: -13px;
+    margin-left: 0;
+  }
+
+  .rating__text{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1180px){
+  .rating{
+    margin-left: 30px;
+    max-width: 569px;
+    width: 520px;
+    display: flex;
+  }
+
+  .rating__pic{
+    left: 0;
+    top: 0;
+    align-self: center;
+    margin-left: 14px;
+  }
+
+  .rating__text{
+    font-size: 18px;
+  }
+}

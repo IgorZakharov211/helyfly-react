@@ -1,0 +1,70 @@
+.content__author{
+  margin: 0 auto 10px auto;
+}
+
+.content__features{
+  margin: 0 auto 60px auto;
+}
+
+.content__intro{
+  margin-bottom: 39px;
+}
+
+.content__photos{
+  margin: 0 auto 50px auto;
+}
+
+.content__place{
+  margin: 52px auto 40px auto;
+}
+
+.content__record{
+  margin: 0 auto 40px auto;
+}
+
+.content__comments{
+  margin: 0 auto 87px auto;
+}
+
+.content__reviews{
+  margin: 0 auto 81px auto;
+}
+
+
+@media screen and (min-width: 1180px){
+  .content__author{
+    margin: 0 auto 50px auto;
+  }
+}
+
+@media screen and (min-width: 800px){
+  .content__record{
+    margin: 0 auto 80px auto;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .content__features{
+    margin-bottom: 30px;
+  }
+
+  .content__intro{
+  	margin-bottom: 70px;
+  }
+
+  .content__photos{
+    margin-bottom: 37px;
+  }
+
+  .content__place{
+    margin: -509px auto 131px auto;
+  }
+
+  .contents__comments{
+    margin-bottom: 97px;
+  }
+}
+
+
+
+
