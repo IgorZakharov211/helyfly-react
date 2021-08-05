@@ -1,0 +1,70 @@
+.review{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 0.5px solid #C7C7C7;
+  margin: 0 0 30px 0;
+}
+
+.review__user{
+  display: grid;
+  justify-items: start;
+  grid-template-columns: max-content 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 0 24px 0;
+}
+
+.review__avatar{
+  grid-row-start: 1;
+  grid-row-end: 4;
+  width: 84px;
+  height: 84px;
+  margin: 0 18px 0 0;
+  padding: 0;
+}
+
+.review__name{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 6px 0;
+  padding: 0;
+}
+
+.review__about{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.49;
+  margin: 0 0 7px 0;
+  padding: 0;
+}
+
+.review__subtitle{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #B3B3B3;
+  margin: 0 0 14px 0;
+  padding: 0;
+}
+
+.review__text{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0 0 20px 0;
+}
+
+.review__subtitle::before{
+  content: url('../../images/reviews/arrow.svg');
+  margin: 2px 5px 0 0;
+}
+
+.review__date{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #B3B3B3;
+  margin: 0 0 44px 0;
+}
+

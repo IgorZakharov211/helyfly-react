@@ -1,5 +1,8 @@
 .reviews{
   width: calc(100% - 30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .reviews__title{
@@ -17,5 +20,22 @@
   list-style-type: none;
   display: flex;
   flex-direction: column;
+}
+
+.review__more{
+  width: 165px;
+  height: 19px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.47;
+  color: #5286EC;
+}
+
+.review__more::after{
+  content: url('../../images/reviews/sArrow.svg');
+  margin: 0 0 0 7px;
 }
 

@@ -1,0 +1,98 @@
+.footer{
+  width: 100%;
+}
+
+.footer__up-level, .footer__down-level, .footer__copyright{
+  padding: 0 15px 0 15px; 
+}
+
+.footer__up-level{
+  height: 70px;
+  border-bottom: 0.5px solid #B3B3B3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__link{
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.footer__logo{
+  height: 15.33px;
+  width: 84px;
+}
+
+.footer__medias{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.footer__media{
+  margin: 0 30px 0 0;
+  padding: 0;
+}
+
+.footer__media:last-of-type{
+  margin: 0;
+}
+
+.footer__down-level{
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__payments{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.footer__payment{
+  margin: 0 17px 0 0;
+  padding: 0;
+}
+
+.footer__payment:last-of-type{
+  margin: 0;
+}
+
+.footer__language{
+  background: none;
+  border: none;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.footer__language::after{
+  content: url('../../images/arrow-down.svg');
+  margin: 0 0 0 6px;
+}
+
+.footer__copyright{
+  margin: 0 0 10px 0;
+  padding: 0;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.21;
+  color: #B3B3B3;
+}
+
+.footer__copyright:last-of-type{
+  margin: 0 0 20px 0;
+}
+
+
