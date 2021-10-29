@@ -9,7 +9,7 @@ function Place(){
         <div className="place__slider">
           <button className="place__prev"></button>
           <ul className="place__ul">
-            <li className="place__ins">
+            <li className="place__ins place__ins_active">
               <div className="place__vektor">1</div>
               <h2 className="place__title">Где встречаемся?</h2>
               <p className="place__subtitle">Москва</p>
@@ -26,6 +26,11 @@ function Place(){
             </li>
           </ul>
           <button className="place__next"></button>
+        </div>
+        <div className="place__slider-control">
+          <button className="place__slider-button place__slide-button_active"></button>
+          <button className="place__slider-button"></button>
+          <button className="place__slider-button"></button>
         </div>
         <div className="place__photographer">
           <img className="place__avatar" alt="Фотография фотографа" src={PlaceAvatar} />

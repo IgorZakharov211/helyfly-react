@@ -1,8 +1,9 @@
 .reviews{
-  width: calc(100% - 30px);
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: calc(100% - 30px);
+  max-width: 1130px;
 }
 
 .reviews__title{
@@ -15,27 +16,41 @@
 }
 
 .reviews__ul{
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
 }
 
 .review__more{
+  align-self: center;
   width: 165px;
   height: 19px;
   background: none;
   border: none;
-  cursor: pointer;
   font-size: 17px;
   font-weight: 500;
   line-height: 1.47;
   color: #5286EC;
+  cursor: pointer;
 }
 
 .review__more::after{
   content: url('../../images/reviews/sArrow.svg');
   margin: 0 0 0 7px;
+}
+
+@media screen and (min-width: 800px){
+  .reviews{
+    align-items: flex-start;
+  }
+
+  .reviews__title{
+    font-size: 20px;
+  }
+  .reviews__title::after{
+    content: ":";
+  }
 }
 

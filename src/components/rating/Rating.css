@@ -6,36 +6,36 @@
 }
 
 .rating__pic{
-  background-image: url('../../images/rating/five-stars.svg');
   position: relative;
   left: 49px;
   top: -13px;
   width: 118px;
   height: 17px;
+  background-image: url('../../images/rating/five-stars.svg');
 }
 
 .rating__span{
+  margin: 0 4px 0 4px;
   color: black;
   font-weight: 500;
-  margin: 0 4px 0 4px;
 }
 
 .rating__text{
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.43;
-  color: #37373F;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0;
   padding: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.43;
+  color: #37373F;
 }
 
 .rating__text::before{
   content:  url('../../images/rating/cup.svg');
-  height: 41px;
   width: 36.65px;
+  height: 41px;
   margin: 14px 14px 0 0;
 }
 
@@ -49,9 +49,9 @@
   }
 
   .rating__pic{
+    align-self: center;
     left: 0;
     top: 0;
-    align-self: center;
     margin-left: 14px;
   }
 
@@ -78,16 +78,16 @@
 
 @media screen and (min-width: 1180px){
   .rating{
-    margin-left: 30px;
-    max-width: 569px;
-    width: 520px;
     display: flex;
+    width: 520px;
+    max-width: 569px;
+    margin-left: 30px;
   }
 
   .rating__pic{
+    align-self: center;
     left: 0;
     top: 0;
-    align-self: center;
     margin-left: 14px;
   }
 

@@ -1,22 +1,21 @@
 .review{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(6, min-content);
+  grid-template-areas:
+  "avatar name"
+  "avatar about"
+  "avatar stars"
+  "subtitle subtitle"
+  "text text"
+  "date date";
   width: 100%;
-  border-bottom: 0.5px solid #C7C7C7;
+  max-width: 630px;
   margin: 0 0 30px 0;
 }
 
-.review__user{
-  display: grid;
-  justify-items: start;
-  grid-template-columns: max-content 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  margin: 0 0 24px 0;
-}
-
 .review__avatar{
-  grid-row-start: 1;
-  grid-row-end: 4;
+  grid-area: avatar;
   width: 84px;
   height: 84px;
   margin: 0 18px 0 0;
@@ -24,35 +23,45 @@
 }
 
 .review__name{
+  grid-area: name;
+  margin: 0 0 6px 0;
+  padding: 0;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
-  margin: 0 0 6px 0;
-  padding: 0;
 }
 
 .review__about{
+  grid-area: about;
+  margin: 0 0 7px 0;
+  padding: 0;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.49;
-  margin: 0 0 7px 0;
-  padding: 0;
+}
+
+.review__stars{
+  grid-area: stars;
+  width: 118px;
+  height: 17px;
 }
 
 .review__subtitle{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #B3B3B3;
+  grid-area: subtitle;
   margin: 0 0 14px 0;
   padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #B3B3B3;
 }
 
 .review__text{
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.5;
+  grid-area: text;
   margin: 0 0 20px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 .review__subtitle::before{
@@ -61,10 +70,31 @@
 }
 
 .review__date{
+  grid-area: date;
+  margin: 0 0 44px 0;
+  padding: 0 0 20px 0;
+  border-bottom: 0.5px solid #C7C7C7;
   font-size: 14px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 1.48;
   color: #B3B3B3;
-  margin: 0 0 44px 0;
+  box-sizing: border-box;
 }
 
+@media screen and (min-width: 800px){
+  .review{
+    grid-template-columns: min-content min-content 1fr;
+    grid-template-rows: repeat(5, min-content);
+    grid-template-areas:
+    "avatar name name"
+    "avatar about about"
+    "avatar stars subtitle"
+    "avatar text text"
+    "avatar date date";
+  }
+
+  .review__stars{
+    margin: 0 50px 0 0;
+  }
+
+}
