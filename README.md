@@ -13,4 +13,4 @@
 
 ## Ссылка на проект: 
 
-*http://helyfly.zakharovigor.ru/*
+*https://helyfly.zakharovigor.ru/*
